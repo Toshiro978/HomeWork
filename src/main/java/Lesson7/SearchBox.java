@@ -22,7 +22,6 @@ public class SearchBox<T> {
         this.pagination = pagination;
     }
 
-    // Конструктори, гетери, сетери
     public static class Pagination {
 
         private int limit;
