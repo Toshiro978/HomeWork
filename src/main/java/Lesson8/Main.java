@@ -14,8 +14,12 @@ public class Main {
         public MyCustomUncheckedException(String message, Throwable cause) {
             super(message, cause);
         }
+        // Додатковий конструктор, який дозволяє створювати виняток лише з повідомленням.
+        public MyCustomUncheckedException(String message) {
+            super(message);
+        }
 
-        public static void myHomeWork() {
+        public static void myHomeWork(){
             try {
                 BufferedReader reader = new BufferedReader(new FileReader("testfile.txt"));
                 String line;
